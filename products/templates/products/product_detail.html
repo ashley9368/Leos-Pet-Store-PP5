@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- Main content area of the product detail page -->
+{% block content %}
+<div class="container-fluid" style="min-height: 70vh; padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container mb-4">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="#" class="d-block">
+                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container">
+                <p class="mb-1">{{ product.name }}</p>
+                <p class="lead mb-2 text-left font-weight-bold">£{{ product.price }}</p>
+                <p class="mt-2">{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

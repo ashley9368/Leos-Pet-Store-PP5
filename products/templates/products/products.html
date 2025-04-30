@@ -26,11 +26,11 @@
         <div class="col-sm-6 col-md-4 col-lg-3 mb-5 d-flex align-items-stretch">
             <div class="card shadow-sm border-0 w-100">
                 {% if product.image %}
-                <a href="#" class="d-block">
+                <a href="{% url 'product_detail' product.id %}" class="d-block">
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="#" class="d-block">
+                <a href="{% url 'product_detail' product.id %}" class="d-block">
                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}

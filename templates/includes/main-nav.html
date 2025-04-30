@@ -16,14 +16,14 @@
                 <a href="?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">View All</a>
+                <a href="{% url 'products' %}" class="dropdown-item">View All</a>
             </div>
         </li>
 
-        <!-- Pet Toys Dropdown -->
+        <!-- Dog Toys Dropdown -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="toys-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pet Toys
+                Dog Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
                 <a href="?category=dog_toys" class="dropdown-item">Dog Toys</a>
