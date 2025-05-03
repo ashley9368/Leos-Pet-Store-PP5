@@ -39,13 +39,13 @@
                 Pet Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="?category=beds" class="dropdown-item">Beds</a>
-                <a href="?category=collars_leads" class="dropdown-item">Collars & Leads</a>
-                <a href="?category=carriers" class="dropdown-item">Carriers & Travel</a>
-                <a href="?category=food" class="dropdown-item">Food & Treats</a>
-                <a href="?category=bowls_feeders" class="dropdown-item">Bowls & Feeders</a>
-                <a href="?category=grooming" class="dropdown-item">Grooming Supplies</a>
-                <a href="?category=beds,collars_leads,carriers,food,bowls_feeders,grooming" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=beds" class="dropdown-item">Beds</a>
+                <a href="{% url 'products' %}?category=collars_leads" class="dropdown-item">Collars & Leads</a>
+                <a href="{% url 'products' %}?category=carriers" class="dropdown-item">Carriers & Travel</a>
+                <a href="{% url 'products' %}?category=food" class="dropdown-item">Food & Treats</a>
+                <a href="{% url 'products' %}?category=bowls" class="dropdown-item">Bowls & Feeders</a>
+                <a href="{% url 'products' %}?category=grooming" class="dropdown-item">Grooming Supplies</a>
+                <a href="{% url 'products' %}?category=beds,collars_leads,carriers,food,bowls_feeders,grooming" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -55,10 +55,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="?category=deals" class="dropdown-item">Deals</a>
-                <a href="?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
