@@ -78,5 +78,29 @@
         "name": "clearance",
         "friendly_name": "Clearance"
       }
+    },
+    {
+      "model": "products.category",
+      "pk": 11,
+      "fields": {
+        "name": "chew_toys",
+        "friendly_name": "Chew Toys"
+      }
+    },
+    {
+      "model": "products.category",
+      "pk": 12,
+      "fields": {
+        "name": "fetch_toys",
+        "friendly_name": "Fetch & Tug Toys"
+      }
+    },
+    {
+      "model": "products.category",
+      "pk": 13,
+      "fields": {
+        "name": "training_toys",
+        "friendly_name": "Training Toys"
+      }
     }
   ]

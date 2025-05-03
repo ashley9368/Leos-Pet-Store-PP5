@@ -26,9 +26,10 @@
                 Dog Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
-                <a href="?category=dog_toys" class="dropdown-item">Dog Toys</a>
-                <a href="?category=cat_toys" class="dropdown-item">Cat Toys</a>
-                <a href="?category=dog_toys,cat_toys,small_pet_toys" class="dropdown-item">All Pet Toys</a>
+                <a href="{% url 'products' %}?category=chew_toys" class="dropdown-item">Chew Toys</a>
+                <a href="{% url 'products' %}?category=fetch_toys" class="dropdown-item">Fetch & Tug Toys</a>
+                <a href="{% url 'products' %}?category=training_toys" class="dropdown-item">Training Toys</a>
+                <a href="{% url 'products' %}?category=chew_toys,fetch_toys,training_toys" class="dropdown-item">All Pet Toys</a>
             </div>
         </li>
 

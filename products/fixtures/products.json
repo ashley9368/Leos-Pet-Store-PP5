@@ -1,292 +1,346 @@
 [
-    {
-      "model": "products.product",
-      "pk": 1,
-      "fields": {
-        "sku": "SKU0001",
-        "name": "Orange Ball",
-        "price": 6.0,
-        "image": "dog-ball-1.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 2,
-      "fields": {
-        "sku": "SKU0002",
-        "name": "Large Ball",
-        "price": 12.99,
-        "image": "dog-ball-2.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 3,
-      "fields": {
-        "sku": "SKU0003",
-        "name": "Large Breed Bed",
-        "price": 45.0,
-        "image": "dog-bed-1.jpg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 4,
-      "fields": {
-        "sku": "SKU0004",
-        "name": "Small Breed Bed",
-        "price": 20.0,
-        "image": "dog-bed-2.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 5,
-      "fields": {
-        "sku": "SKU0005",
-        "name": "Stainless Steel Bowl",
-        "price": 11.99,
-        "image": "dog-bowl-1.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 6,
-      "fields": {
-        "sku": "SKU0006",
-        "name": "Ceramic Bowl",
-        "price": 7.99,
-        "image": "dog-bowl-2.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 7,
-      "fields": {
-        "sku": "SKU0007",
-        "name": "Medium Breed Collar",
-        "price": 5.99,
-        "image": "dog-collar-1.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 8,
-      "fields": {
-        "sku": "SKU0008",
-        "name": "Heavy-Duty Buckle Collar",
-        "price": 9.99,
-        "image": "dog-collar-3.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 9,
-      "fields": {
-        "sku": "SKU0009",
-        "name": "Dog Crate",
-        "price": 99.99,
-        "image": "dog-crate-1.jpg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 10,
-      "fields": {
-        "sku": "SKU0010",
-        "name": "Boomerang Dog Frisbee",
-        "price": 19.99,
-        "image": "dog-frisbe-1.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 11,
-      "fields": {
-        "sku": "SKU0011",
-        "name": "Purple Ring Dog Toy",
-        "price": 12.99,
-        "image": "dog-frisbe-2.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 12,
-      "fields": {
-        "sku": "SKU0012",
-        "name": "Dog Grooming Razor",
-        "price": 29.99,
-        "image": "dog-grooming-razor-1.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 13,
-      "fields": {
-        "sku": "SKU0013",
-        "name": "Small Breed Harness",
-        "price": 14.99,
-        "image": "dog-harness-3.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 14,
-      "fields": {
-        "sku": "SKU0014",
-        "name": "Large Dog Harness",
-        "price": 18.99,
-        "image": "dog-harness-4.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 15,
-      "fields": {
-        "sku": "SKU0015",
-        "name": "Mixed Dry Dog Food",
-        "price": 6.99,
-        "image": "dog-kibble-2.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 16,
-      "fields": {
-        "sku": "SKU0016",
-        "name": "Premium Dry Dog Food",
-        "price": 9.99,
-        "image": "dog-kibble-3.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 17,
-      "fields": {
-        "sku": "SKU0017",
-        "name": "Black Rope Dog Lead",
-        "price": 9.99,
-        "image": "dog-lead-1.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 18,
-      "fields": {
-        "sku": "SKU0018",
-        "name": "Chain Lead",
-        "price": 14.99,
-        "image": "dog-lead-3.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 19,
-      "fields": {
-        "sku": "SKU0019",
-        "name": "Rope Toy",
-        "price": 9.99,
-        "image": "dog-rope-1.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 20,
-      "fields": {
-        "sku": "SKU0020",
-        "name": "Braided Tug Rope Toy",
-        "price": 8.99,
-        "image": "dog-rope-2.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 21,
-      "fields": {
-        "sku": "SKU0021",
-        "name": "Grooming Scissors/Comb",
-        "price": 15.99,
-        "image": "dog-scissors-2.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 22,
-      "fields": {
-        "sku": "SKU0022",
-        "name": "Soft Training Ring",
-        "price": 9.99,
-        "image": "dog-toy-1.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 23,
-      "fields": {
-        "sku": "SKU0023",
-        "name": "Hex Ball Dog Toy",
-        "price": 6.99,
-        "image": "dog-toy-2.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 24,
-      "fields": {
-        "sku": "SKU0024",
-        "name": "Durable Giraffe Toy",
-        "price": 19.99,
-        "image": "dog-toy-3.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 25,
-      "fields": {
-        "sku": "SKU0025",
-        "name": "Squeaky Stuffed Animal Toy",
-        "price": 19.99,
-        "image": "dog-toy-4.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 26,
-      "fields": {
-        "sku": "SKU0026",
-        "name": "Spiky Rubber Ball",
-        "price": 14.99,
-        "image": "dog-toy-5.webp"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 27,
-      "fields": {
-        "sku": "SKU0027",
-        "name": "Large Bone Treat",
-        "price": 11.99,
-        "image": "dog-treat-2.jpg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 28,
-      "fields": {
-        "sku": "SKU0028",
-        "name": "Assorted Crunchy Dog Treats",
-        "price": 9.99,
-        "image": "dog-treats-1.jpeg"
-      }
-    },
-    {
-      "model": "products.product",
-      "pk": 29,
-      "fields": {
-        "sku": "SKU0029",
-        "name": "Grooming Kit",
-        "price": 39.99,
-        "image": "grooming-scissors-1.jpg"
-      }
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "sku": "SKU0001",
+      "name": "Orange Ball",
+      "price": 6.0,
+      "image": "dog-ball-1.webp",
+      "description": "Bouncy, high-visibility ball perfect for energetic dogs.",
+      "category": 12
     }
-  ]
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "sku": "SKU0002",
+      "name": "Large Ball",
+      "price": 12.99,
+      "image": "dog-ball-2.webp",
+      "description": "Classic ball great for fetch in the park or garden.",
+      "category": 12
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "sku": "SKU0003",
+      "name": "Large Breed Bed",
+      "price": 45.0,
+      "image": "dog-bed-1.jpg",
+      "description": "Spacious, comfy bed for large breeds who need extra support.",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "sku": "SKU0004",
+      "name": "Small Breed Bed",
+      "price": 20.0,
+      "image": "dog-bed-2.jpeg",
+      "description": "Cozy sleeping spot designed for small dog breeds.",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "sku": "SKU0005",
+      "name": "Stainless Steel Bowl",
+      "price": 11.99,
+      "image": "dog-bowl-1.webp",
+      "description": "Durable stainless bowl that resists rust and is easy to clean.",
+      "category": 6
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "sku": "SKU0006",
+      "name": "Ceramic Bowl",
+      "price": 7.99,
+      "image": "dog-bowl-2.jpeg",
+      "description": "Stylish ceramic bowl, ideal for small to medium dogs.",
+      "category": 6
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "sku": "SKU0007",
+      "name": "Medium Breed Collar",
+      "price": 5.99,
+      "image": "dog-collar-1.jpeg",
+      "description": "Comfortable, adjustable collar for medium-sized dogs.",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "sku": "SKU0008",
+      "name": "Heavy-Duty Buckle Collar",
+      "price": 9.99,
+      "image": "dog-collar-3.webp",
+      "description": "Tough buckle collar built for strength and durability.",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "sku": "SKU0009",
+      "name": "Dog Crate",
+      "price": 99.99,
+      "image": "dog-crate-1.jpg",
+      "description": "Spacious crate ideal for training or safe travel.",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "sku": "SKU0010",
+      "name": "Boomerang Dog Frisbee",
+      "price": 19.99,
+      "image": "dog-frisbe-1.jpeg",
+      "description": "Lightweight frisbee for long-distance fetch sessions.",
+      "category": 12
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "sku": "SKU0011",
+      "name": "Purple Ring Dog Toy",
+      "price": 12.99,
+      "image": "dog-frisbe-2.jpeg",
+      "description": "Durable chew ring that’s easy to grip and helps clean teeth.",
+      "category": 11
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "sku": "SKU0012",
+      "name": "Dog Grooming Razor",
+      "price": 29.99,
+      "image": "dog-grooming-razor-1.webp",
+      "description": "Precise razor for easy and safe grooming at home.",
+      "category": 7
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "sku": "SKU0013",
+      "name": "Small Breed Harness",
+      "price": 14.99,
+      "image": "dog-harness-3.jpeg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "sku": "SKU0014",
+      "name": "Large Dog Harness",
+      "price": 18.99,
+      "image": "dog-harness-4.jpeg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "sku": "SKU0015",
+      "name": "Mixed Dry Dog Food",
+      "price": 6.99,
+      "image": "dog-kibble-2.jpeg",
+      "description": "Balanced dry food blend suitable for daily feeding.",
+      "category": 4
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "sku": "SKU0016",
+      "name": "Premium Dry Dog Food",
+      "price": 9.99,
+      "image": "dog-kibble-3.webp",
+      "description": "Nutritious dry food made with high-quality ingredients.",
+      "category": 4
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "sku": "SKU0017",
+      "name": "Black Rope Dog Lead",
+      "price": 9.99,
+      "image": "dog-lead-1.jpeg",
+      "description": "Strong black rope lead perfect for walks and training.",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "sku": "SKU0018",
+      "name": "Chain Lead",
+      "price": 14.99,
+      "image": "dog-lead-3.jpeg",
+      "description": "Metal chain lead for added strength and control.",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "sku": "SKU0019",
+      "name": "Rope Toy",
+      "price": 9.99,
+      "image": "dog-rope-1.webp",
+      "description": "Simple, sturdy rope for interactive fetch or tug play.",
+      "category": 12
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "sku": "SKU0020",
+      "name": "Braided Tug Rope Toy",
+      "price": 8.99,
+      "image": "dog-rope-2.webp",
+      "description": "Strong, woven rope toy ideal for tug-of-war fun.",
+      "category": 12
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "sku": "SKU0021",
+      "name": "Grooming Scissors/Comb",
+      "price": 15.99,
+      "image": "dog-scissors-2.webp",
+      "description": "Essential grooming tools for trimming and combing fur.",
+      "category": 7
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "sku": "SKU0022",
+      "name": "Soft Training Ring",
+      "price": 9.99,
+      "image": "dog-toy-1.jpeg",
+      "description": "Lightweight ring toy perfect for beginner training or gentle games.",
+      "category": 13
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "sku": "SKU0023",
+      "name": "Hex Ball Dog Toy",
+      "price": 6.99,
+      "image": "dog-toy-2.jpeg",
+      "description": "Unique hexagon shape makes this chew toy unpredictable and fun.",
+      "category": 11
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "sku": "SKU0024",
+      "name": "Durable Giraffe Toy",
+      "price": 19.99,
+      "image": "dog-toy-3.jpeg",
+      "description": "Tough giraffe-shaped chew toy designed for long-lasting biting fun.",
+      "category": 11
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "sku": "SKU0025",
+      "name": "Squeaky Stuffed Animal Toy",
+      "price": 19.99,
+      "image": "dog-toy-4.webp",
+      "description": "Soft squeaker helps grab attention during training exercises.",
+      "category": 13
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "sku": "SKU0026",
+      "name": "Spiky Rubber Ball",
+      "price": 14.99,
+      "image": "dog-toy-5.webp",
+      "description": "Soft, spiked ball ideal for games of fetch or gentle chewing.",
+      "category": 12
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "sku": "SKU0027",
+      "name": "Large Bone Treat",
+      "price": 11.99,
+      "image": "dog-treat-2.jpg",
+      "description": "Edible chew that satisfies your dog’s urge to gnaw while tasting great.",
+      "category": 5
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "sku": "SKU0028",
+      "name": "Assorted Crunchy Dog Treats",
+      "price": 9.99,
+      "image": "dog-treats-1.jpeg",
+      "description": "Tasty, crunchy treats that reward good behavior and support dental health.",
+      "category": 5
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "sku": "SKU0029",
+      "name": "Grooming Kit",
+      "price": 39.99,
+      "image": "grooming-scissors-1.jpg",
+      "description": "All-in-one grooming kit for trimming, combing, and maintenance.",
+      "category": 7
+    }
+  }
+]
