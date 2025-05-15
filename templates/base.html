@@ -37,6 +37,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- Stripe -->
+  <script src="https://js.stripe.com/v3/"></script>
   {% endblock %}
 
   {% block extra_js %}
@@ -62,8 +64,7 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q"
-              placeholder="Search">
+            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
             <div class="input-group-append">
               <button class="form-control btn custom-search-btn" type="submit">
                 <span class="icon">
@@ -104,15 +105,16 @@
 
           <!-- Shopping Bag Display -->
           <li class="list-inline-item">
-            <a class="{% if total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
                   {% if total %}
                   £{{ total|floatformat:2 }}
-                {% else %}
+                  {% else %}
                   £0.00
-                {% endif %}
+                  {% endif %}
                 </p>
               </div>
             </a>
@@ -139,19 +141,19 @@
   {% if messages %}
   <div class="message-container">
     <!-- In Django 40 is an error, 30 is a warning, And 25 is a success -->
-      {% for message in messages %}
-          {% with message.level as level %}
-              {% if level == 40 %}
-                  {% include 'includes/toasts/toast_error.html' %}
-              {% elif level == 30 %}
-                  {% include 'includes/toasts/toast_warning.html' %}
-              {% elif level == 25 %}
-                  {% include 'includes/toasts/toast_success.html' %}
-              {% else %}
-                  {% include 'includes/toasts/toast_info.html' %}
-              {% endif %}
-          {% endwith %}
-      {% endfor %}
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
   </div>
   {% endif %}
 
@@ -169,38 +171,37 @@
 
   {% endblock %}
 
-<!-- Footer Section -->
-<footer class="bg-light text-center text-lg-start mt-5 border-top pt-3">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-        <h5 class="text-uppercase text-black">Leo's Pet Store</h5>
-        <p class="text-black">Providing quality pet products with love. Educational Project ©2025</p>
-      </div>
+  <!-- Footer Section -->
+  <footer class="bg-light text-center text-lg-start mt-5 border-top pt-3">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <h5 class="text-uppercase text-black">Leo's Pet Store</h5>
+          <p class="text-black">Providing quality pet products with love. Educational Project ©2025</p>
+        </div>
 
-      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-        <h5 class="text-uppercase text-black">Quick Links</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="{% url 'home' %}" class="text-black">Home</a>
-          </li>
-          <li>
-            <a href="#" class="text-black">About Us</a>
-          </li>
-          <li>
-            <a href="#" class="text-black">Contact</a>
-          </li>
-        </ul>
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <h5 class="text-uppercase text-black">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="{% url 'home' %}" class="text-black">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-black">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="text-black">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="text-center p-3 bg-white border-top text-black">
-    © 2025 Leo's Pet Store - For Educational Use Only
-  </div>
-</footer>
+    <div class="text-center p-3 bg-white border-top text-black">
+      © 2025 Leo's Pet Store - For Educational Use Only
+    </div>
+  </footer>
 
 </body>
 
 </html>
-
