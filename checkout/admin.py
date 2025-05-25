@@ -17,12 +17,14 @@ class OrderAdmin(admin.ModelAdmin):
     readonly_fields = (
         'order_number', 'date',
         'delivery_cost', 'order_total', 'grand_total',
+        'original_bag', 'stripe_pid'
     )
 
     # Columns to display in the order list view
     list_display = (
         'order_number', 'date', 'full_name',
         'order_total', 'delivery_cost', 'grand_total',
+        'original_bag', 'stripe_pid'
     )
 
     # Order the list so newest orders appear first
