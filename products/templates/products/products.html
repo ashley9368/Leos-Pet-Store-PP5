@@ -34,10 +34,18 @@
                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
+
                 <div class="card-body text-center">
                     <h5 class="card-title mb-1 font-weight-bold">{{ product.name }}</h5>
                     <p class="text-muted mb-2">{{ product.description|truncatewords:10 }}</p>
                     <p class="h5 text-dark font-weight-bold">£{{ product.price }}</p>
+
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </small>
+                    {% endif %}
                 </div>
             </div>
         </div>
