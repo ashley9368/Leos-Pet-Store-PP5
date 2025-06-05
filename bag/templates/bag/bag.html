@@ -13,9 +13,9 @@
 <div class="overlay"></div>
 <div class="container mb-2">
     <div class="row">
-        <div class="col">
+        <div class="col text-center">
             <hr>
-            <h2 class="logo-font mb-4">Shopping Bag</h2>
+            <h2 class="logo-font mb-4 display-4">Your Basket</h2>
             <hr>
         </div>
     </div>
@@ -39,9 +39,11 @@
                     <tr>
                         <td class="p-3 w-25">
                             {% if item.product.image %}
-                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ item.product.name }}">
                             {% endif %}
                         </td>
                         <td class="py-3">
@@ -49,7 +51,7 @@
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                            <p class="my-0">£{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
                             <p class="my-0">{{ item.quantity }}</p>
@@ -72,13 +74,17 @@
                 </table>
             </div>
             {% else %}
-            <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Keep Shopping</span>
-            </a>
+            <div class="text-center mt-5">
+                <p class="h4 mb-3">Your basket currently has no items.</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg mb-4">
+                    <i class="fas fa-chevron-left"></i> Keep Shopping
+                </a>
+            </div>
+
+            <div class="text-center">
+                <img src="{{ MEDIA_URL }}dog-in-rain.png" alt="Sad dog" class="img-fluid rounded" style="max-width: 300px;">
+                <p class="mt-2 text-muted">Even your pup looks disappointed...</p>
+            </div>
             {% endif %}
         </div>
     </div>
