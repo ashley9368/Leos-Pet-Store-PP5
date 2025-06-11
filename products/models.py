@@ -19,9 +19,13 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
-    description = models.TextField(blank=True)  # optional for now
+    description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
+    is_visible = models.BooleanField(default=True)
+    #visibility ==true/false
+    #review {comment, images, votes}
+    #flagged
 
     def __str__(self):
         return self.name

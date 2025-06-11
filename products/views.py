@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -11,11 +11,9 @@ from .forms import ProductForm
 # View to show all products, including sorting, filtering and searching
 def all_products(request):
     """View to show all products, including sorting and search queries """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry only store owners can do that.')
-        return redirect(reverse('home'))
 
-    products = Product.objects.all()
+    # Only show visible products to regular users, But show all the super users, regardless of listed or not
+    products = Product.objects.filter(is_visible=True) if not request.user.is_superuser else Product.objects.all()
     query = None
     categories = None
     sort = None
@@ -136,3 +134,15 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+@login_required
+def toggle_visibility(request, pk):
+    """Allow is_visible on a product and send you back where you came from"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry only store owners can do that.')
+        return redirect('home')
+    
+    product = get_object_or_404(Product, pk=pk)
+    product.is_visible = not product.is_visible
+    product.save()
+    return redirect(request.META.get('HTTP_REFERER', '/'))
