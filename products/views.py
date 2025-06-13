@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 
 # View to show all products, including sorting, filtering and searching
@@ -64,12 +64,28 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
-    """View to show indivudual product details """
-
+    """View to show individual product details and handle reviews."""
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.all().order_by('-created_at')
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Your review was submitted successfully.')
+            return redirect('product_detail', product_id=product.id)
+        else:
+            messages.error(request, 'There was an error with your review. Please check the form.')
+    else:
+        form = ReviewForm()
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)

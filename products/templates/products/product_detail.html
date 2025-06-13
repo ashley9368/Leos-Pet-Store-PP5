@@ -86,13 +86,6 @@
                 <img src="{{ review.image.url }}" alt="Review image" class="img-fluid rounded my-2"
                     style="max-width: 300px;">
                 {% endif %}
-
-                {% if request.user == review.user or request.user.is_superuser %}
-                <form method="POST" action="{% url 'delete_review' review.id %}" style="display: inline;">
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-sm btn-danger mt-2">Delete Review</button>
-                </form>
-                {% endif %}
             </div>
             {% endfor%}
             {% else %}
