@@ -74,6 +74,7 @@
             <hr class="mb-4">
             <h4 class="text-center mb-4">Customer Reviews</h4>
 
+            <!-- Show reviews if they exist -->
             {% if reviews %}
             {% for review in reviews %}
             <div class="mb-4 p-4 border rounded shadow-sm">
@@ -86,12 +87,21 @@
                 <img src="{{ review.image.url }}" alt="Review image" class="img-fluid rounded my-2"
                     style="max-width: 300px;">
                 {% endif %}
+
+                <!-- Show delete button only to review owner or superuser -->
+                {% if request.user == review.user or request.user.is_superuser %}
+                <form method="POST" action="{% url 'delete_review' review.id %}" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-sm btn-danger mt-2">Delete Review</button>
+                </form>
+                {% endif %}
             </div>
             {% endfor%}
             {% else %}
             <p class="text-muted text-center">No reviews yet.</p>
             {% endif %}
 
+            <!-- Show review form only if user is logged in -->
             {% if user.is_authenticated %}
             <hr class="my-4">
             <form method="POST" enctype="multipart/form-data" class="review-form">

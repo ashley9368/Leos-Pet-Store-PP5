@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
 
@@ -66,8 +66,10 @@ def all_products(request):
 def product_detail(request, product_id):
     """View to show individual product details and handle reviews."""
     product = get_object_or_404(Product, pk=product_id)
+    # Get all reviews for this product, newest first
     reviews = product.reviews.all().order_by('-created_at')
 
+    # If the form was submitted, process the review form
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
@@ -80,6 +82,7 @@ def product_detail(request, product_id):
         else:
             messages.error(request, 'There was an error with your review. Please check the form.')
     else:
+        # If just viewing the page, show an empty form
         form = ReviewForm()
 
     context = {
@@ -162,3 +165,18 @@ def toggle_visibility(request, pk):
     product.is_visible = not product.is_visible
     product.save()
     return redirect(request.META.get('HTTP_REFERER', '/'))
+
+@login_required
+def delete_review(request, review_id):
+    """Delete a review if user is owner or superuser."""
+    review = get_object_or_404(Review, pk=review_id)
+    
+    # Check if user is the review creator or superuser, if yes, delete.
+    if request.user == review.user or request.user.is_superuser:
+        review.delete()
+        messages.success(request, "Review deleted successfully.")
+    # If not, then dont allow
+    else:
+        messages.error(request, "You do not have permission to delete this review.")
+    
+    return redirect('product_detail', product_id=review.product.id)
