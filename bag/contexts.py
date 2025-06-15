@@ -1,6 +1,9 @@
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+#Fixed delivery fee
+FIXED_DELIVERY_FEE = 5.00 
+
 def bag_contents(request):
 
     bag_items = []
@@ -18,10 +21,15 @@ def bag_contents(request):
             'product': product,
         })
 
+    delivery = FIXED_DELIVERY_FEE if product_count > 0 else 0
+    grand_total = total + delivery
+
     context = {
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
+        'delivery': delivery,
+        'grand_total': grand_total,
     }
 
     return context
