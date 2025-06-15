@@ -9,7 +9,8 @@
 
         <!-- All Products Dropdown -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -21,20 +22,23 @@
 
         <!-- Dog Toys Dropdown -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="toys-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="toys-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dog Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
                 <a href="{% url 'products' %}?category=chew_toys" class="dropdown-item">Chew Toys</a>
                 <a href="{% url 'products' %}?category=fetch_toys" class="dropdown-item">Fetch & Tug Toys</a>
                 <a href="{% url 'products' %}?category=training_toys" class="dropdown-item">Training Toys</a>
-                <a href="{% url 'products' %}?category=chew_toys,fetch_toys,training_toys" class="dropdown-item">All Pet Toys</a>
+                <a href="{% url 'products' %}?category=chew_toys,fetch_toys,training_toys" class="dropdown-item">All Pet
+                    Toys</a>
             </div>
         </li>
 
         <!-- Pet Accessories Dropdown -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="accessories-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pet Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
@@ -43,21 +47,16 @@
                 <a href="{% url 'products' %}?category=food" class="dropdown-item">Food & Treats</a>
                 <a href="{% url 'products' %}?category=bowls" class="dropdown-item">Bowls & Feeders</a>
                 <a href="{% url 'products' %}?category=grooming" class="dropdown-item">Grooming Supplies</a>
-                <a href="{% url 'products' %}?category=beds,collars_leads,carriers,food,bowls_feeders,grooming" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=beds,collars_leads,carriers,food,bowls_feeders,grooming"
+                    class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
-        <!-- Special Offers Dropdown -->
+        <!-- Contact Us -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'contact' %}">
+                Contact Us
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
-            </div>
         </li>
     </ul>
 </div>
