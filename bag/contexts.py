@@ -20,8 +20,10 @@ def bag_contents(request):
             'quantity': quantity,
             'product': product,
         })
-
+     
+    #Add delivery fee if bag isn't empty
     delivery = FIXED_DELIVERY_FEE if product_count > 0 else 0
+    # Add final total including delivery
     grand_total = total + delivery
 
     context = {

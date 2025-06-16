@@ -24,11 +24,42 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     is_visible = models.BooleanField(default=True)
-    #review {comment, images, votes}
-    #flagged
+    #flagged {with votes}
 
     def __str__(self):
         return self.name
+    
+    @property
+    def upvotes(self):
+        #Count how many upvotes this products has
+        return self.votes.filter(vote_type=ProductVote.UP).count()
+
+    @property
+    def downvotes(self):
+        #Count how many downvotes this products has
+        return self.votes.filter(vote_type=ProductVote.DOWN).count()
+
+    @property
+    def is_flagged(self):
+        #If there is more then 4 downvotes mark this product as flagged, then show red border for superuser
+        return self.downvotes >= 4
+
+#Keep track of each user's up/down vote
+class ProductVote(models.Model):
+    UP = 'U'
+    DOWN = 'D'
+    VOTE_CHOICES = [
+        (UP, 'Upvote'),
+        (DOWN, 'Downvote'),
+    ]
+
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='votes')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    vote_type = models.CharField(max_length=1, choices=VOTE_CHOICES)
+
+    class Meta:
+        #Stop the user from voting twice on one product
+        unique_together = ('product', 'user')
 
 """Review System models"""
 class Review(models.Model):
