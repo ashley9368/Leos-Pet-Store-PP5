@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from .models import Product, ProductVote
 
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
@@ -180,3 +181,29 @@ def delete_review(request, review_id):
         messages.error(request, "You do not have permission to delete this review.")
     
     return redirect('product_detail', product_id=review.product.id)
+
+@login_required
+def vote_product(request, product_id, vote_type):
+    product = get_object_or_404(Product, pk=product_id)
+
+    # Make sure vote_type is 'U' or 'D'
+    if vote_type not in (ProductVote.UP, ProductVote.DOWN):
+        messages.error(request, "Invalid vote.")
+
+    else:
+        # Try to get the users vote if none, create one with vote_type
+        vote, created = ProductVote.objects.get_or_create(
+            product=product, user=request.user,
+            defaults={'vote_type': vote_type}
+        )
+
+        if not created:
+            # clicking vote again removes it
+            if vote.vote_type == vote_type:
+                vote.delete()
+            # If they switch vote type, update and save
+            else:
+                vote.vote_type = vote_type
+                vote.save()
+    #Take user back to where they were, if it fails then go to products
+    return redirect(request.META.get('HTTP_REFERER', 'products'))
