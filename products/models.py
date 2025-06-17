@@ -24,7 +24,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
     is_visible = models.BooleanField(default=True)
-    #flagged {with votes}
 
     def __str__(self):
         return self.name
