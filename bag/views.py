@@ -24,6 +24,7 @@ def add_to_bag(request, item_id):
         messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
+
     return redirect(redirect_url)
 
 def remove_from_bag(request, item_id):
@@ -31,16 +32,18 @@ def remove_from_bag(request, item_id):
     #get bag from session
     bag = request.session.get('bag', {})
 
-    # If the item exists in the bag, delete it
+    # If the item exists in the bag, remove one or delete
     if item_id in bag:
         product = get_object_or_404(Product, pk=item_id)
-
+        # if more than one, remove one unit
         if bag[item_id] > 1:
             bag[item_id] -= 1
             messages.success(request, f"Removed {product.name} from your bag")
         else:
+            # last one, delete the item entirely
             del bag[item_id]
             messages.success(request, f"Removed {product.name} from your bag")
+
         # save the updated bag into session
         request.session['bag'] = bag
 
