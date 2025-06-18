@@ -25,3 +25,18 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+def remove_from_bag(request, item_id):
+    """Remove an item from the shopping bag"""
+    #get bag from session
+    bag = request.session.get('bag', {})
+
+    # If the item exists in the bag, delete it
+    if item_id in bag:
+        del bag[item_id]
+        messages.success(request, "Item removed from your bag")
+        #save the updated bag
+        request.session['bag'] = bag
+
+    # redirect to the bag page to show updated session
+    return redirect('view_bag')

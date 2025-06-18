@@ -1,8 +1,9 @@
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from decimal import Decimal
 
 #Fixed delivery fee
-FIXED_DELIVERY_FEE = 5.00 
+FIXED_DELIVERY_FEE = Decimal('5.00') 
 
 def bag_contents(request):
 

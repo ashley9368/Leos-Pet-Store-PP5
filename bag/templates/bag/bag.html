@@ -32,18 +32,16 @@
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
-
                     {% for item in bag_items %}
                     <tr>
                         <td class="p-3 w-25">
                             {% if item.product.image %}
-                            <img class="img-fluid rounded" src="{{ item.product.image.url }}"
-                                alt="{{ item.product.name }}">
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ item.product.name }}">
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                             {% endif %}
                         </td>
                         <td class="py-3">
@@ -57,17 +55,22 @@
                             <p class="my-0">{{ item.quantity }}</p>
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                            <p class="my-0">£{{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3">
+                            <!-- Remove from bag -->
+                            <form action="{% url 'remove_from_bag' item.item_id %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-link text-danger p-0">Remove</button>
+                            </form>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
-                        <td colspan="5" class="text-right">
+                        <td colspan="6" class="text-right">
                             <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon">
-                                    <i class="fas fa-lock"></i>
-                                </span>
+                                <span class="icon"><i class="fas fa-lock"></i></span>
                             </a>
                         </td>
                     </tr>
@@ -80,7 +83,6 @@
                     <i class="fas fa-chevron-left"></i> Keep Shopping
                 </a>
             </div>
-
             <div class="text-center">
                 <img src="{{ MEDIA_URL }}dog-in-rain.png" alt="Sad dog" class="img-fluid rounded" style="max-width: 300px;">
                 <p class="mt-2 text-muted">Even your pup looks disappointed...</p>
