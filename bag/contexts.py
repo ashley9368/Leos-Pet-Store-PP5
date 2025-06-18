@@ -20,6 +20,7 @@ def bag_contents(request):
             'item_id': item_id,
             'quantity': quantity,
             'product': product,
+            'subtotal': product.price * quantity,
         })
      
     #Add delivery fee if bag isn't empty

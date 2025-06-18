@@ -55,13 +55,18 @@
                             <p class="my-0">{{ item.quantity }}</p>
                         </td>
                         <td class="py-3">
-                            <p class="my-0">£{{ item.product.price }}</p>
+                            <p class="my-0">£{{ item.subtotal }}</p>
                         </td>
-                        <td class="py-3">
-                            <!-- Remove from bag -->
+                        <td class="py-3 d-flex">
+                            <!-- Add or remove product from bag -->
+                            <form action="{% url 'add_to_bag' item.item_id %}" method="POST" class="mr-2">
+                                {% csrf_token %}
+                                <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                                <button type="submit" class="btn btn-sm btn-outline-secondary">Add</button>
+                            </form>
                             <form action="{% url 'remove_from_bag' item.item_id %}" method="POST">
                                 {% csrf_token %}
-                                <button type="submit" class="btn btn-link text-danger p-0">Remove</button>
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Remove</button>
                             </form>
                         </td>
                     </tr>
