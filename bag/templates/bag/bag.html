@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Page header section-->
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -9,9 +10,12 @@
 </div>
 {% endblock %}
 
+<!-- Main content section -->
 {% block content %}
 <div class="overlay"></div>
 <div class="container mb-2">
+
+    <!-- Title -->
     <div class="row">
         <div class="col text-center">
             <hr>
@@ -20,77 +24,87 @@
         </div>
     </div>
 
+    <!-- If basket has products -->
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            <div class="table-responsive rounded">
-                <table class="table table-sm table-borderless">
-                    <thead class="text-black">
+
+            <!-- Basket table -->
+            <div class="table-responsive rounded bg-white shadow-sm p-3">
+                <table class="table table-sm table-borderless align-middle">
+                    <thead class="text-black border-bottom border-dark">
                         <tr>
-                            <th scope="col">Product Info</th>
-                            <th scope="col"></th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Details</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
-                    {% for item in bag_items %}
-                    <tr>
-                        <td class="p-3 w-25">
-                            {% if item.product.image %}
-                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            {% else %}
-                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0">£{{ item.product.price }}</p>
-                        </td>
-                        <td class="py-3 w-25">
-                            <p class="my-0">{{ item.quantity }}</p>
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0">£{{ item.subtotal }}</p>
-                        </td>
-                        <td class="py-3 d-flex">
-                            <!-- Add or remove product from bag -->
-                            <form action="{% url 'add_to_bag' item.item_id %}" method="POST" class="mr-2">
-                                {% csrf_token %}
-                                <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
-                                <button type="submit" class="btn btn-sm btn-outline-secondary">Add</button>
-                            </form>
-                            <form action="{% url 'remove_from_bag' item.item_id %}" method="POST">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-sm btn-outline-danger">Remove</button>
-                            </form>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    <tr>
-                        <td colspan="6" class="text-right">
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon"><i class="fas fa-lock"></i></span>
-                            </a>
-                        </td>
-                    </tr>
+                    <tbody class="text-dark">
+
+                        {% for item in bag_items %}
+                        <tr class="border-bottom">
+                            <td class="p-2" style="width: 100px;">
+
+                                {% if item.product.image %}
+                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
+                                    class="img-fluid rounded shadow-sm">
+                                {% else %}
+                                <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}"
+                                    class="img-fluid rounded shadow-sm">
+                                {% endif %}
+                            </td>
+                            <td class="py-2">
+                                <strong>{{ item.product.name }}</strong><br>
+                                <small class="text-muted">SKU: {{ item.product.sku|upper }}</small>
+                            </td>
+                            <td>£{{ item.product.price }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>£{{ item.subtotal }}</td>
+                            <td class="d-flex gap-1">
+
+                                <!-- Add product to bag -->
+                                <form action="{% url 'add_to_bag' item.item_id %}" method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="redirect_url" value="{% url 'view_bag' %}">
+                                    <button type="submit" class="btn btn-sm btn-dark">Add</button>
+                                </form>
+                                
+                                <!-- Remove product from bag -->
+                                <form action="{% url 'remove_from_bag' item.item_id %}" method="POST">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Remove</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
                 </table>
             </div>
-            {% else %}
-            <div class="text-center mt-5">
-                <p class="h4 mb-3">Your basket currently has no items.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg mb-4">
-                    <i class="fas fa-chevron-left"></i> Keep Shopping
+
+            <!-- Checkout button -->>
+            <div class="text-right mt-3">
+                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                    <span class="text-uppercase">Secure Checkout</span>
+                    <span class="icon"><i class="fas fa-lock"></i></span>
                 </a>
             </div>
-            <div class="text-center">
-                <img src="{{ MEDIA_URL }}dog-in-rain.png" alt="Sad dog" class="img-fluid rounded" style="max-width: 300px;">
-                <p class="mt-2 text-muted">Even your pup looks disappointed...</p>
+
+            {% else %}
+
+            <!-- If basket is empty -->>
+            <div class="text-center mt-5">
+                <p class="h4 mb-3">Your basket currently has no items.</p>
+                <a href="{% url 'products' %}" class="btn btn-link text-dark rounded-0 btn-lg mb-4">
+                    <i class="fas fa-chevron-left"></i> Keep Shopping
+                </a>
+
+                <div class="text-center">
+                    <img src="{{ MEDIA_URL }}dog-in-rain.png" alt="Sad dog" class="img-fluid rounded mt-3" style="max-width: 300px;">
+                    <p class="mt-2 text-muted">Even your pup looks disappointed...</p>
+                </div>
             </div>
             {% endif %}
         </div>
