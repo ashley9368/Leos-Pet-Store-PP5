@@ -5,10 +5,13 @@ from .forms import ContactForm
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
+
         if form.is_valid():
             form.save()
             messages.success(request, 'Thanks for reaching out! We’ll get back to you soon.')
+
             return redirect('contact')
+
         else:
             messages.error(request, 'There was a problem. Please check the form.')
     else:

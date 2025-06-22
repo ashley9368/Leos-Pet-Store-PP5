@@ -4,7 +4,6 @@ from django.db.models import Sum
 from products.models import Product
 from django_countries.fields import CountryField
 
-from products.models import Product
 from profiles.models import UserProfile
 
 class Order(models.Model):
@@ -71,4 +70,3 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'{self.product.name} ×{self.quantity} on order {self.order.order_number}'
-

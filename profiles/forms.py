@@ -13,7 +13,7 @@ class UserProfileForm(forms.ModelForm):
         # Placeholders for each input
         placeholders = {
             'default_phone_number': 'Phone Number',
-            'default_street_address1': 'Street Address',
+            'default_street_address': 'Street Address',
             'default_town_or_city': 'Town or City',
             'default_postcode': 'Postal Code',
             'default_county': 'County',
