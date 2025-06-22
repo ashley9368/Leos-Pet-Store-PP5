@@ -20,7 +20,8 @@
   {% block corecss %}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   {% endblock %}
 
@@ -96,6 +97,7 @@
               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+              <a href="{% url 'newsletter' %}" class="dropdown-item">Subscribe to Newsletter</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
               {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
