@@ -3,11 +3,7 @@
 
 <!-- Page header section-->
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
+<div class="container header-container"></div>
 {% endblock %}
 
 <!-- Main content section -->
@@ -84,7 +80,7 @@
                 </table>
             </div>
 
-            <!-- Checkout button -->>
+            <!-- Checkout button -->
             <div class="text-right mt-3">
                 <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                     <span class="text-uppercase">Secure Checkout</span>
@@ -94,7 +90,7 @@
 
             {% else %}
 
-            <!-- If basket is empty -->>
+            <!-- If basket is empty -->
             <div class="text-center mt-5">
                 <p class="h4 mb-3">Your basket currently has no items.</p>
                 <a href="{% url 'products' %}" class="btn btn-link text-dark rounded-0 btn-lg mb-4">
