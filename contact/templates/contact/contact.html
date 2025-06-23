@@ -1,14 +1,43 @@
 {% extends "base.html" %}
-{% load static %}
-
 {% block content %}
+
 <div class="overlay"></div>
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
+<div class="container" style="padding-top:10rem; padding-bottom:5rem;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-5">
+            <!-- Title -->
+            <h2 class="text-center mb-4">Contact Us</h2>
+
+            <!-- Contact form -->
+            <form method="POST">
+                {% csrf_token %}
+
+                <!-- Name input -->
+                <div class="form-group">
+                    {{ form.name.label_tag }}
+                    {{ form.name }}
+                </div>
+                <!-- Email input -->
+                <div class="form-group">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                </div>
+                <!-- Subject input -->
+                <div class="form-group">
+                    {{ form.subject.label_tag }}
+                    {{ form.subject }}
+                </div>
+                <!-- User message -->
+                <div class="form-group">
+                    {{ form.message.label_tag }}
+                    {{ form.message }}
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock %}
