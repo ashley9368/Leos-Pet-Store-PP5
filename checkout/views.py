@@ -11,6 +11,7 @@ import stripe
 import json
 from django.views.decorators.http import require_POST
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -19,7 +20,7 @@ def cache_checkout_data(request):
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
             'save_info': request.POST.get('save_info'),
-            'username': request.user,
+            'username': request.user.username if request.user.is_authenticated else 'AnonymousUser',
         })
         return HttpResponse(status=200)
     except Exception as e:
@@ -27,13 +28,13 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
+
 def checkout(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
     public_key = settings.STRIPE_PUBLIC_KEY
     bag = request.session.get('bag', {})
 
     if request.method == 'POST':
-
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -76,19 +77,18 @@ def checkout(request):
                 "There was a problem with your form. Please double-check your information."
             )
 
-
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
 
-    current_bag   = bag_contents(request)
-    subtotal      = current_bag['total']
+    current_bag = bag_contents(request)
+    subtotal = current_bag['total']
     stripe_amount = round(subtotal * 100)
 
     # Create the PaymentIntent
     intent = stripe.PaymentIntent.create(
-        amount   = stripe_amount,
-        currency = settings.STRIPE_CURRENCY,
+        amount=stripe_amount,
+        currency=settings.STRIPE_CURRENCY,
     )
 
     if request.user.is_authenticated:
@@ -109,7 +109,6 @@ def checkout(request):
     else:
         order_form = OrderForm()
 
-    # Warn if your key is missing
     if not public_key:
         messages.warning(
             request,
@@ -123,6 +122,7 @@ def checkout(request):
     }
     return render(request, 'checkout/checkout.html', context)
 
+
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
@@ -132,10 +132,8 @@ def checkout_success(request, order_number):
 
     profile = UserProfile.objects.get(user=request.user)
     order.user_profile = profile
-    # Attach user's profile to the order
     order.save()
 
-    # Save the user's info
     if save_info:
         profile_data = {
             'default_phone_number': order.phone_number,
@@ -152,7 +150,7 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
-    
+
     if 'bag' in request.session:
         del request.session['bag']
 

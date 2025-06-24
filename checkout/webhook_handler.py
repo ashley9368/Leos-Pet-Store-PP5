@@ -48,8 +48,17 @@ class StripeWH_Handler:
         """Handle the payment_intent.succeeded webhook from Stripe"""
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
-        save_info = intent.metadata.save_info
+
+        # Safely get metadata
+        try:
+            bag = intent.metadata.bag
+            save_info = intent.metadata.save_info
+            username = intent.metadata.username
+        except AttributeError:
+            return HttpResponse(
+                content="⚠️ Webhook received but metadata is missing. Likely a test event.",
+                status=400
+            )
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(intent.latest_charge)
@@ -64,17 +73,19 @@ class StripeWH_Handler:
 
         # Update profile information if save_info was checked
         profile = None
-        username = intent.metadata.username
         if username != 'AnonymousUser':
-            profile = UserProfile.objects.get(user__username=username)
-            if save_info:
-                profile.default_phone_number = shipping_details.phone
-                profile.default_country = shipping_details.address.country
-                profile.default_postcode = shipping_details.address.postal_code
-                profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_county = shipping_details.address.state
-                profile.save()
+            try:
+                profile = UserProfile.objects.get(user__username=username)
+                if save_info:
+                    profile.default_phone_number = shipping_details.phone
+                    profile.default_country = shipping_details.address.country
+                    profile.default_postcode = shipping_details.address.postal_code
+                    profile.default_town_or_city = shipping_details.address.city
+                    profile.default_street_address1 = shipping_details.address.line1
+                    profile.default_county = shipping_details.address.state
+                    profile.save()
+            except UserProfile.DoesNotExist:
+                profile = None
 
         order_exists = False
         attempt = 1
@@ -88,7 +99,7 @@ class StripeWH_Handler:
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
                     town_or_city__iexact=shipping_details.address.city,
-                    street_address1__iexact=shipping_details.address.line1,
+                    street_address__iexact=shipping_details.address.line1,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_bag=bag,
@@ -117,7 +128,7 @@ class StripeWH_Handler:
                     country=shipping_details.address.country,
                     postcode=shipping_details.address.postal_code,
                     town_or_city=shipping_details.address.city,
-                    street_address1=shipping_details.address.line1,
+                    street_address=shipping_details.address.line1,
                     county=shipping_details.address.state,
                     grand_total=grand_total,
                     original_bag=bag,
@@ -133,14 +144,13 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
+                        quantity = item_data.get('quantity', 1)
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=quantity,
+                        )
+                        order_line_item.save()
             except Exception as e:
                 if order:
                     order.delete()
