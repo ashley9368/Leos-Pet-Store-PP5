@@ -1,21 +1,37 @@
-{% extends "account/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% load i18n %}
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Out</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
 
-{% block content %}
-<h1>{% trans "Sign Out" %}</h1>
+<body class="bg-white text-dark">
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="text-center" style="max-width: 400px; width: 100%;">
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+      {% load i18n %}
+      <h2 class="mb-4">{% trans "Sign Out" %}</h2>
 
+      <p class="mb-4">{% trans 'Are you sure you want to sign out?' %}</p>
 
-{% endblock %}
+      <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+        {% endif %}
+
+        <div class="d-flex justify-content-between">
+          <a class="btn btn-outline-dark" href="{% url 'home' %}">Cancel</a>
+          <button type="submit" class="btn btn-dark">{% trans "Sign Out" %}</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>
