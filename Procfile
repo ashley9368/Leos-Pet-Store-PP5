@@ -1,0 +1,1 @@
+web: gunicorn leos_pet_store.wsgi:application
