@@ -162,3 +162,207 @@ Users are able to sign up to a newsletter where they can get regular emails of w
 
 ![newsletter](static/images/newsletter.png)
 ![newsletter](static/images/newsletter-unsub.png)
+
+# Wishlist
+
+Users can add products to their wishlist, unfortunatley i didnt have time to add a place for them to view those wishlisted products
+![wishlist](static/images/wishlist.png)
+
+# Contact us
+
+A contact page for users to contact the site owners, with their name, email, subject, message and an alert to let them know there message had been sent
+![contact](static/images/contact.png)
+
+# My Profile
+
+The my profile page shows the users saved contact infomation and their order history
+
+![profile](static/images/profile.png)
+
+# 404 page
+
+A 404 page to handle page errors
+![error handling](static/404.png)
+
+### Future features
+
+* finish the wishlist app
+* make an email system that works
+* A Facebook page for marketing
+* Marketing
+
+# Web marketing
+
+## Email marketing
+
+The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
+
+## Search engine optimization
+
+SEO keywords
+
+![seo](static/images/seo.jpg)
+
+## Social media marketing
+
+A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
+
+![facebook](static/images/facebook.jpg)
+
+## Technologies
+### Languages
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+* [Javascript](https://www.javascript.com/)
+
+* [Python](https://www.python.org/)
+
+### Frameworks, programs and libraries used
+
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+* [Bootstrap4](https://getbootstrap.com/) - A css framework
+
+* [Gitpod](https://www.gitpod.io/) - Gitpod was used as an IDE
+
+* [Github](https://github.com/) - I used Github to store all the data of my project after pushing it
+
+* [Heroku](https://www.heroku.com/) - is a cloud platform service  I used to deploy and host the project
+
+* [ElephantSQL](https://www.elephantsql.com/) - used as a database for the project
+
+* [Font Awesome](https://fontawesome.com/) - Was used to add icons for my social media links.
+
+* [PEP8ci](https://pep8ci.herokuapp.com/) - I used it to validate python code
+
+* [Balsamiq](https://balsamiq.com/) - was used to draw wireframes
+
+* [dbdiagram](https://dbdiagram.io/home) - was used to draw the database schema
+
+* [Stripe](https://stripe.com/en-ie) - was used for checkout functionality and facilitate online payments
+
+* [AWS](https://aws.amazon.com/s3/) - for  object storage through a web service interface.
+
+* [Unsplash](https://unsplash.com/) - images used for the project
+
+* [Pexels](https://www.pexels.com/) - images used for the project
+
+* [Adobestock](https://stock.adobe.com/ie/) - images used for the project
+
+# Deployment
+
+I developed this site on Gitpod, using git for version control. Then deployed to Heroku using the following steps
+
+* Log in to [Heroku](https://id.heroku.com/login) or create an account
+
+* Click New and Create New App
+
+* I selected Europe as region.
+
+* Click Create App button
+
+I then went to create a database to connect to the new created app.
+
+* Login to [ElephantSQL](https://www.elephantsql.com/)
+
+* Create new instance
+
+* Set up your plan - Give the plan a name and select Tiny Turtle free plan
+
+* Select region button
+
+* Select a data center ner your. I selected EU-West-1(Ireland)
+
+* Click Review
+
+* Click Create instance
+
+* Return to elephantsql dashboard, click on database instance name
+
+* In the url section, clicking the copy icon will copy the database url to the clipboard
+
+* Go back to Heroku to your created app, go to Settings
+
+* Add config var DATABASE-URL, and for the value, copy in your databse url from ElephantSQL. do not add quotation marks around your database
+
+* In Gitpod install dj-database_url and psycopg2 to connect to your external database
+
+* Update requirements.txt: pip freeze > requirements
+
+* import dj_database_url in settings and update your database
+
+* migrate your database
+
+* create a new superuser for your database and at this point your database is exposed do not commit it to github
+
+* Install gunicorn and freeze into the requirements file
+
+* Then create Procfile
+
+* DISABLE_COLLECTSTATIC
+
+* Commit and push to github
+
+* On your app in Heroku go to Deploy and connect it to github and search your repository, click connect.
+
+* Choose automatic or manual deploy. I chose manual. Click deploy branch
+
+* When complete click View to open the deployed app
+
+## From Github docs
+
+### Forking 
+
+* Open GitHub page that hosts the repository you wish to fork.
+* Find the 'Fork' button at the top right of the page
+* Once you click the button the fork will be in your repository
+
+### Cloning
+
+* Open Go to the repository page on Github
+* click on the green button that says "Code".
+* You can choose to download a zip file of the repository, unpack it on your local machine, and open it in your IDE.
+* Copy the URL under the HTTPS tab to clone using https.
+* In a new window, and set the current directory to the one you want to contain the clone from.
+* Type git clone and paste the URL copied from the GitHub page.
+* The repository clone will now be created on your machine. 
+
+## Credits
+
+* Images are from [Unsplash](https://unsplash.com/s/photos/home-organization), [Adobestock](https://stock.adobe.com/ie/), [Pexels](https://www.pexels.com/)
+
+* Code Institute Botique Ado walk through
+
+* Hello django code institute
+
+* [Dataflair django tutorial](https://data-flair.training/blogs/django-tutorials-home/)
+
+* [Stack overflow](https://stackoverflow.com/)
+
+Products description inspiration from
+
+* [The neat system](https://www.theneatsystem.co.za/)
+
+* [Amazon](https://www.amazon.co.uk/)
+
+* [Ikea](https://www.ikea.com)
+
+#### Blog content
+
+* [Home edit](https://thehomeedit.com/)
+* [Pretty organized home](https://www.organisedprettyhome.com/organise-kids-toys)
+* [Woman's day](https://www.womansday.com/)
+* [The neat method](https://neatmethod.com/)
+
+### Acknowledgement and support
+
+* Unfortunately i had run out of time to make all the changes i wanted to, I tried my best and im very aware there are things that need to be fixed/built, But due to a loved one being in hospital i was not able to catch up with the time i lost, but i did get a two week extention which code insititue were very kind to give me. So i wanted to credit them as a thank you too.
+
+* My Mentor Jubril akolade
+
+* The code institute tutors, specifically, Rebecca, Roman, Oisin.
+
+* My dog, for giving me the idea to create this website in the first place. 
