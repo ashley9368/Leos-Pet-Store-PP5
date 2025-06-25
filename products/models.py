@@ -41,7 +41,7 @@ class Product(models.Model):
     @property
     def is_flagged(self):
         #If there is more then 4 downvotes mark this product as flagged, then show red border for superuser
-        return self.downvotes >= 1
+        return self.downvotes >= 4
 
 #Keep track of each user's up/down vote
 class ProductVote(models.Model):
