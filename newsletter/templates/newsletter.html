@@ -40,7 +40,7 @@
       {% if subscriber %}
       <form action="{% url 'unsubscribe' subscriber.unsubscribe_token %}" method="POST" class="text-center mt-3">
         {% csrf_token %}
-        <button type="submit" class="btn btn-outline-dark">I want to unsubscribe</button>
+        <button type="submit" class="btn btn-outline-black">I want to unsubscribe</button>
       </form>
       {% endif %}
     </div>

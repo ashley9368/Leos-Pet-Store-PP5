@@ -55,11 +55,14 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    show_category_filter = (sort == 'category') or ('category' in request.GET)
+
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'show_category_filter': show_category_filter,
     }
 
     return render(request, 'products/products.html', context)

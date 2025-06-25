@@ -29,3 +29,82 @@ Link to the deployed site - [HERE](https://leos-pet-store-e28403e1c3e9.herokuapp
 * As a site user I want a responsive site so I can use it on different devices.
 * As a site user I want to be able to leave reviews on products i buy
 * As a site user I want a contact form so i can contact the owners of the site regarding any issues i may have.
+
+## Database
+
+<details>
+  <summary>Click here to view my ERD:</summary>
+
+  ![](static/images/erd.png)
+
+</details>
+
+## Design
+Wireframes
+
+<details>
+<summary>Click here to view Wireframes:</summary>
+
+  ![](static/images/wireframe-homepage.png)
+  ![](static/images/wireframe-products.png)
+  ![](static/images/wireframe-profile.png)
+  ![](static/images/product-management.png)
+  ![](static/images/wireframe-newsletter.png)
+  ![](static/images/wireframe-contact.png)
+ 
+</details>
+
+## E-commerce type
+
+Leo’s Pet Store is an online store that sells pet products directly to customers. For the owners of the store, the primary goal is to achieve full CRUD functionality to easily manage products, and customer information.
+
+# Features
+## Homepage
+
+When you first click the leos pet store url, it takes you to the home page with a shop now button in the middle, my account at the top right and your shopping bag in the top right. with a search bar at the top and various options for the user in the navbar.
+### Header and navigation
+
+![header](static/images/header.png)
+
+### The home page
+
+![home](static/images/homepage.png)
+
+### Sign up
+For the user to be able to use most of the site, like writing reviews or going through the checkout process they will need to sign in.
+
+![sign up](static/images/signup.png)
+
+### Sign in
+
+People who have registered to the site will need to sign in here
+
+![login](static/images/signin.png)
+
+### Sign out
+When users want to sign out
+
+![sign out](static/images/signout.png)
+
+## All products
+
+When the user clicks all products they are met with three options, By price, By category, and view all meaning they can view products in different ways based on their needs
+
+### Sort by price
+![by price](static/images/byprice.png)
+
+### Sort by category
+![category](static/images/bycategory.png)
+
+### View all
+![view all](static/images/viewall.png)
+
+ ### Product detail, add to bag, reviews
+
+Each product on the site has its own product detail area where the user can read about the product and add it to there bag along with an options to leave a review at the bottom
+
+![detail](static/images/product-detail.png)
+
+![add to bag](static/images/add-to-bag.png)
+
+![review](static/images/review.png)

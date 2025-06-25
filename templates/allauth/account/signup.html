@@ -1,21 +1,38 @@
-{% extends "account/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% load i18n %}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <title>Sign Up</title>
+</head>
 
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+<body class="bg-white text-dark">
 
-{% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+  {% load i18n %}
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+  {% block content %}
+  <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="mb-4">{% trans "Sign Up" %}</h1>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+    <p>
+      {% blocktrans %}
+      If you already have an account then please
+      <a href="{{ login_url }}" class="text-decoration-underline">sign in</a>
+      {% endblocktrans %}
+    </p>
 
-{% endblock %}
+    <form method="POST" action="{% url 'account_signup' %}">
+      {% csrf_token %}
+      {{ form|crispy }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <button class="btn btn-dark btn-block mt-3" type="submit">{% trans "Sign Up" %}</button>
+    </form>
+  </div>
+  {% endblock %}
+
+</body>
+</html>
