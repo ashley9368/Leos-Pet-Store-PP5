@@ -108,3 +108,57 @@ Each product on the site has its own product detail area where the user can read
 ![add to bag](static/images/add-to-bag.png)
 
 ![review](static/images/review.png)
+
+### The shopping bag
+
+The shopping bag shows various important things the user would need, the option to remove or add items from there bag, the quantity of each product, and the total of each product, and a picture and name of the product, then the option to proceed to pay.
+
+![bag](static/images/shopping-bag.png)
+
+### Checkout
+
+On the left side of the checkout is where user puts their information, and on the right side is a summary of their order and the total including delivery.
+
+![checkout](static/images/checkout.png)
+
+### Checkout success
+
+After completing the checkout process, users receive an order confirmation with their details including order number.
+![order confirm](static/images/checkout-success-1.png)
+![order confirm](static/images/checkout-success-2.png)
+
+### Product detail- super user
+
+If the user is the superuser, they have an option to either delete or edit the product
+![detail](static/images/superuser-edit-product.png)
+
+### Product management- add product
+
+Only super users are allowed to add products to the site
+
+![add product](static/images/product-management-superuser.png)
+![add product](static/images/product-management-superuser-2.png)
+
+### Product management- edit product
+
+Superusers can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel. I also added a feature where the superuser can list or unlist any product incase they are out of stock or if the product has recieved bad reviews or what ever reason they want to.
+
+![edit](static/images/edit-product.png)
+
+### Product management- delete product
+
+Super users only can delete the products from the site
+
+![delete](static/images/delete-product.png)
+
+### Flagged system 
+
+users are also able to upvote or down vote products, if a product recieves to many down votes (built for 4 here) then the product will show in the admin pannel as flagged, and also show a red border around the specific product that has recieved to many downvotes, that way the owners of the site are aware that a product is under performing and they can unlist or delete the product as they see fit
+
+![flagged](static/images/red-border.png)
+
+### Newsletter
+Users are able to sign up to a newsletter where they can get regular emails of what the site has to offer or anything they may need to know
+
+![newsletter](static/images/newsletter.png)
+![newsletter](static/images/newsletter-unsub.png)

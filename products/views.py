@@ -7,6 +7,7 @@ from .models import Product, ProductVote
 
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
+from wishlist.models import WishlistItem
 
 
 # View to show all products, including sorting, filtering and searching
@@ -73,6 +74,11 @@ def product_detail(request, product_id):
     # Get all reviews for this product, newest first
     reviews = product.reviews.all().order_by('-created_at')
 
+    # Check if the product is in the users wishlist
+    is_in_wishlist = False
+    if request.user.is_authenticated:
+        is_in_wishlist = WishlistItem.objects.filter(user=request.user, product=product).exists()
+
     # If the form was submitted, process the review form
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES)
@@ -93,6 +99,7 @@ def product_detail(request, product_id):
         'product': product,
         'reviews': reviews,
         'form': form,
+        'is_in_wishlist': is_in_wishlist,
     }
 
     return render(request, 'products/product_detail.html', context)
