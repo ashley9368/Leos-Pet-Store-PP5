@@ -16,7 +16,31 @@
     <div class="row">
         <div class="col text-center py-4 px-3 rounded" style="background: rgba(0, 0, 0, 0.5); margin-top: 2rem;">
             <h2 class="font-weight-bold text-uppercase text-white mb-3"> Our Products </h2>
-            <p class="lead text-light mb-0"> Browse the best quality dog products handpicked for your furry companion </p>
+            <p class="lead text-light mb-0"> Browse the best quality dog products handpicked for your furry companion
+            </p>
+        </div>
+    </div>
+
+    <!-- Category Dropdown -->
+    <div class="row justify-content-center my-4">
+        <div class="col-12 text-center">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle text-white" style="background-color: black;" type="button"
+                    id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Filter by Category </button>
+                <div class="dropdown-menu dropdown-menu-center text-center bg-white border-dark" aria-labelledby="categoryDropdown">
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=beds">Beds</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=collars_leads">Collars & Leads</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=carriers_travel">Carriers & Travel</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=food">Food</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=treats">Treats</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=bowls">Bowls & Feeders</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=grooming">Grooming Supplies</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=chew_toys">Chew Toys</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=fetch_toys">Fetch & Tug Toys</a>
+                    <a class="dropdown-item text-dark" href="{% url 'products' %}?category=training_toys">Training Toys</a>
+                    <a class="dropdown-item text-white" style="background-color: black;" href="{% url 'products' %}">View All Products</a>
+                </div>
+            </div>
         </div>
     </div>
 
