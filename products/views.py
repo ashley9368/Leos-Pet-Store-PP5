@@ -198,7 +198,7 @@ def vote_product(request, product_id, vote_type):
 
     # Make sure vote_type is 'U' or 'D'
     if vote_type not in (ProductVote.UP, ProductVote.DOWN):
-        messages.error(request, "Invalid vote.")
+        messages.error(request, "Vote is invalid.")
 
     else:
         # Try to get the users vote if none, create one with vote_type
@@ -215,5 +215,5 @@ def vote_product(request, product_id, vote_type):
             else:
                 vote.vote_type = vote_type
                 vote.save()
-    #Take user back to where they were, if it fails then go to products
+    #Take user back to where the user was, if it fails then go to products
     return redirect(request.META.get('HTTP_REFERER', 'products'))
