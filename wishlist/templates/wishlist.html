@@ -1,0 +1,11 @@
+<h1>Your Wishlited Items</h1>
+
+{% if wishlist_items %}
+<ul>
+    {% for item in wishlist_item %}
+    <li>{{ item.product.name }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Your wishlist has nothing in it.</p>
+{% endif %}
