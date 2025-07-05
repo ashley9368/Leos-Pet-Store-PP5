@@ -21,7 +21,7 @@
                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="#" class="d-block">
+                <a class="d-block">
                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
@@ -29,19 +29,19 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container">
-                <p class="mb-1">{{ product.name }}</p>
+                <h2 class="mb-1">{{ product.name }}</h2>
                 <p class="lead mb-2 text-left font-weight-bold">£{{ product.price }}</p>
 
                 <!-- Wishlist Toggle Button -->
                 {% if user.is_authenticated %}
-                + <form method="post" action="{% url 'toggle_wishlist' product.id %}">
+                <form method="post" action="{% url 'toggle_wishlist' product.id %}">
                     {% csrf_token %}
                     {% if is_in_wishlist %}
                     <button type="submit" class="btn btn-outline-danger mt-3">
                         <i class="fas fa-heart-broken"></i> Remove from Wishlist
                     </button>
                     {% else %}
-                    <button type="submit" class="btn btn-outline-primary mt-3">
+                    <button type="submit" class="btn btn-outline-black mt-3">
                         <i class="fas fa-heart"></i> Add to Wishlist
                     </button>
                     {% endif %}
@@ -52,7 +52,7 @@
 
                 {% if request.user.is_superuser %}
                 <small class="d-block mb-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a href="{% url 'edit_product' product.id %}">Edit</a>
                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </small>
                 {% endif %}
@@ -127,7 +127,7 @@
                 <div class="form-group mb-3">
                     <label for="{{ form.comment.id_for_label }}">Leave a review</label>
                     <textarea name="{{ form.comment.name }}" class="form-control" id="{{ form.comment.id_for_label }}"
-                        rows="4">{{ form.comment.value }}</textarea>
+                        rows="4"></textarea>
                 </div>
                 <div class="form-group mb-3">
                     <label for="{{ form.image.id_for_label }}">Image (optional)</label>
@@ -135,7 +135,7 @@
                         id="{{ form.image.id_for_label }}">
                 </div>
                 <div class="text-end">
-                    <button type="submit" class="btn btn-primary px-4">Submit Review</button>
+                    <button type="submit" class="btn btn-black px-4">Submit Review</button>
                 </div>
             </form>
             {% else %}

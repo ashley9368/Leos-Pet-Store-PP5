@@ -1,12 +1,13 @@
-{% extends "account/base.html" %}
-
 {% load i18n %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "Verify Your E-mail Address" %}</h1>
-
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. If you do not see the verification e-mail in your main inbox, check your spam folder. Please contact us if you do not receive the verification e-mail within a few minutes.{% endblocktrans %}</p>
-
+<div class="container vh-100 d-flex justify-content-center align-items-center bg-white text-black">
+    <div class="text-center border p-5">
+        <h1 class="mb-4">{% trans "Verify Your E-mail Address" %}</h1>
+        <p class="lead">{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. If you do not see the verification e-mail in your main inbox, check your spam folder. Please contact us if you do not receive the verification e-mail within a few minutes.{% endblocktrans %}</p>
+        <a href="{% url 'home' %}" class="text-black">Return Home</a>
+    </div>
+</div>
 {% endblock %}
