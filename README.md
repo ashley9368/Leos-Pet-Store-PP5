@@ -184,6 +184,10 @@ The my profile page shows the users saved contact infomation and their order his
 A 404 page to handle page errors
 ![error handling](static/404.png)
 
+The facebook page for my project
+![Facebook page](static/images/fb-page.png)
+![Facebook page](static/images/fb-page-2.png)
+
 ### Acknowledgement and support
 
 * My Mentor Jubril akolade

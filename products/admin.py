@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, ProductVote
+from .models import Product, Category, ProductVote, Review
 
 class ProductAdmin(admin.ModelAdmin):
     # Show these columns in the Products page
@@ -18,3 +18,4 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category)
 admin.site.register(ProductVote)
+admin.site.register(Review)
