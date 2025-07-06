@@ -54,11 +54,11 @@
                 class="card shadow-sm w-100 {% if request.user.is_superuser and product.is_flagged %}flagged{% endif %}">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}" class="d-block">
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" style="object-fit: cover; height: 200px; width:100%;" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}" class="d-block">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" style="object-fit: cover; height: 200px; width:100%;" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
                 <!-- Name, description, price, voting -->
