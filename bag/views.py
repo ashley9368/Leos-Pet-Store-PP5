@@ -10,17 +10,18 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """Add a product to the bag, With choice to add product by 1"""
+    """Add a product to the bag, With choice to add quantity"""
     product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    # if the item is already in the bag, add one more
+    # if the item is already in the bag, add the new amount to the existing amount
     if item_id in bag:
-        bag[item_id] += 1
+        bag[item_id] += quantity
     else:
-        # first time adding this item, set quantity to 1 and show message
-        bag[item_id] = 1
+        # If the item is not in the bag yet, add amount with chosen quantity
+        bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
