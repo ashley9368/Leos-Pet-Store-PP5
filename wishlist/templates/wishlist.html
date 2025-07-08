@@ -1,11 +1,55 @@
-<h1>Your Wishlited Items</h1>
+{% extends "base.html" %}
 
-{% if wishlist_items %}
-<ul>
-    {% for item in wishlist_items %}
-    <li>{{ item.product.name }}</li>
-    {% endfor %}
-</ul>
-{% else %}
-<p>Your wishlist has nothing in it.</p>
-{% endif %}
+{% block page_header %}
+<div class="container text-center py-5 mt-5">
+    <h1 class="h2 text-black mb-2">Your Wishlisted Items</h1>
+    <hr class="w-25 mx-auto border-dark">
+</div>
+{% endblock %}
+
+{% block content %}
+<!--Content -->
+<div class="overlay"></div>
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-secondary shadow-sm">
+                <div class="card-body">
+
+                    <!-- Wishlist Items -->
+                    {% if wishlist_items %}
+                    <ul class="list-group list-group-flush">
+                        {% for item in wishlist_items %}
+                        <li class="list-group-item d-flex align-items-center">
+                            {% if item.product.image %}
+                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-thumbnail mr-3" style="width:60px; height: 60px; object-fit:cover;">
+                            {% else %}
+                            <div class="bg-secondary mr-3" style="width:60px; height:60px;"></div>
+                            {% endif %}
+
+                            <span class="flex-grow-1">
+                                <a href="{% url 'product_detail' item.product.id %}" class="text-dark text-decoration-none">{{ item.product.name }}</a>
+                            </span>
+                            <span class="ml-auto font-weight-bold">£{{ item.product.price|floatformat:2 }}</span>
+
+                            <!-- Remove from wishlist -->
+                            <form action="{% url 'toggle_wishlist' item.product.id %}" method="POST" class="ml-3">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-outline-danger" title="Remove from wishlist">Remove</button>
+                            </form>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <!-- No items in wishlist -->
+                    {% else %}
+                    <div class="text-center">
+                        <p class="fst-italic mb-2">Your Wishlist has no items in it.</p>
+                        <a href="{% url 'products' %}" class="btn btn-black">Browse Products</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
