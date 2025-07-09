@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/bag/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=chew_toys</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=fetch_toys</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=training_toys</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=chew_toys,fetch_toys,training_toys</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=beds</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=collars_leads</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=food</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=bowls</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=grooming</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=beds,collars_leads,carriers,food,bowls_feeders,grooming</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/contact/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/7/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/7/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/7/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/1/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/1/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/1/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/15/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/15/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/15/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/23/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/23/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/23/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/6/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/6/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/6/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/20/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/20/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/20/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/8/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/8/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/8/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/22/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/22/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/22/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/19/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/19/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/19/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/16/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/16/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/16/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/17/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/17/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/17/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/28/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/28/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/28/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/5/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/5/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/5/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/27/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/27/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/27/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/2/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/2/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/2/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/11/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/11/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/11/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/13/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/13/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/13/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/18/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/18/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/18/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/26/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/26/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/26/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/21/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/21/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/21/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/14/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/14/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/14/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/10/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/10/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/10/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/24/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/24/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/24/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/25/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/25/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/25/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/4/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/4/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/4/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/12/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/12/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/12/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/29/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/29/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/29/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/3/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/3/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/3/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/9/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/9/vote/U/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=/products/9/vote/D/</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=carriers_travel</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/products/?category=treats</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F7%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F7%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F1%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F1%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F15%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F15%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F23%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F23%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F6%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F6%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F20%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F20%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F8%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F8%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F22%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F22%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F19%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F19%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F16%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F16%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F17%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F17%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F28%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F28%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F5%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F5%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F27%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F27%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F2%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F2%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F11%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F11%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F13%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F13%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F18%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F18%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F26%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F26%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F21%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F21%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F14%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F14%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F10%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F10%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F24%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F24%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F25%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F25%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F4%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F4%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F12%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F12%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F29%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F29%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F3%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F3%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F9%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/signup/?next=%2Fproducts%2F9%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F7%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F7%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F1%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F1%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F15%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F15%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F23%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F23%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F6%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F6%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F20%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F20%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F8%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F8%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F22%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F22%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F19%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F19%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F16%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F16%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F17%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F17%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F28%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F28%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F5%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F5%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F27%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F27%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F2%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F2%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F11%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F11%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F13%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F13%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F18%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F18%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F26%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F26%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F21%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F21%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F14%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F14%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F10%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F10%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F24%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F24%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F25%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F25%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F4%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F4%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F12%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F12%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F29%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F29%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F3%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F3%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F9%2Fvote%2FU%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://leos-pet-store-e28403e1c3e9.herokuapp.com/accounts/login/?next=%2Fproducts%2F9%2Fvote%2FD%2F</loc>
+  <lastmod>2025-07-09T10:37:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

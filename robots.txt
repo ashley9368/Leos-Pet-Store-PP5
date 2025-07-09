@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://leos-pet-store-e28403e1c3e9.herokuapp.com/sitemap.xml
