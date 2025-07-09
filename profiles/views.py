@@ -6,6 +6,7 @@ from .forms import UserProfileForm
 
 from checkout.models import Order
 
+
 @login_required
 def profile(request):
     """ Display user profile """
@@ -29,6 +30,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def order_history(request, order_number):

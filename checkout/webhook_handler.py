@@ -56,7 +56,8 @@ class StripeWH_Handler:
             username = intent.metadata.username
         except AttributeError:
             return HttpResponse(
-                content="⚠️ Webhook received but metadata is missing. Likely a test event.",
+                content="⚠️ Webhook received but metadata is missing. "
+                "Likely a test event.",
                 status=400
             )
 

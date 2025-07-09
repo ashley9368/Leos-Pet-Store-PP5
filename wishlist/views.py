@@ -4,6 +4,7 @@ from django.urls import reverse
 from .models import WishlistItem
 from products.models import Product
 
+
 # Create your views here.
 @login_required
 def toggle_wishlist(request, product_id):
@@ -19,11 +20,13 @@ def toggle_wishlist(request, product_id):
     if not created:
         wishlist_item.delete()
 
-    return redirect(request.META.get('HTTP_REFERER',reverse('products')))
+    return redirect(request.META.get('HTTP_REFERER', reverse('products')))
+
 
 def wishlist(request):
     """ Show the user their wishlisted items """
-    wishlist_items = WishlistItem.objects.filter(user=request.user).select_related('product')
-    context = {'wishlist_items': wishlist_items,}
+    wishlist_items = WishlistItem.objects.filter(
+        user=request.user).select_related('product')
+    context = {'wishlist_items': wishlist_items, }
 
     return render(request, 'wishlist.html', context)

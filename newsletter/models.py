@@ -1,6 +1,7 @@
 from django.db import models
 import uuid
 
+
 # Create your models here.
 class NewsletterSubscriber(models.Model):
     email = models.EmailField(unique=True)

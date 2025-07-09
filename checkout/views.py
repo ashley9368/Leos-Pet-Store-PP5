@@ -21,13 +21,15 @@ def cache_checkout_data(request):
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
             'save_info': request.POST.get('save_info'),
-            'username': request.user.username if request.user.is_authenticated else 'AnonymousUser',
+            'username': request.user.username
+            if request.user.is_authenticated else 'AnonymousUser',
         })
         return HttpResponse(status=200)
     except Exception as e:
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
+
 
 @login_required
 def checkout(request):
@@ -63,7 +65,8 @@ def checkout(request):
                     )
                     order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request,
+                    messages.error(
+                        request,
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!"
                     )
@@ -71,11 +74,13 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(
                 request,
-                "There was a problem with your form. Please double-check your information."
+                "There was a problem with your form. "
+                "Please double-check your information."
             )
 
     if not bag:
@@ -122,6 +127,7 @@ def checkout(request):
         'client_secret': intent.client_secret,
     }
     return render(request, 'checkout/checkout.html', context)
+
 
 @login_required
 def checkout_success(request, order_number):

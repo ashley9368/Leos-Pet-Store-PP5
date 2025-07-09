@@ -14,7 +14,7 @@ class OrderForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        
+
         # Placeholders for each input
         placeholders = {
             'full_name': 'Full Name',

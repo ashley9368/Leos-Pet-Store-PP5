@@ -24,7 +24,6 @@ Link to the deployed site - [HERE](https://leos-pet-store-e28403e1c3e9.herokuapp
 * As a site user I want to receive a clear message after purchase so I know if it was successful or not.
 * As a site user I want to log in to see my order history.
 * As a site user I want to add products to my cart so I can purchase multiple items at once.
-* As a site user I want to sort the list of available products so I can find what I want faster.
 * As a site user I want to sort products within a specific category so I can narrow down my options easily.
 * As a site user I want a responsive site so I can use it on different devices.
 * As a site user I want to be able to leave reviews on products i buy
@@ -187,6 +186,103 @@ A 404 page to handle page errors
 The facebook page for my project
 ![Facebook page](static/images/fb-page.png)
 ![Facebook page](static/images/fb-page-2.png)
+
+# Deployment
+## Github Deployment
+
+The website was stored on GitHub for version control and backup. I did this using VS codes terminal
+
+After adding, modifying, or removing code, I used the terminal vs code and ran the following commands:
+
+git add .
+git commit -m "some message"
+git push
+
+This made sure that all changes were saved and made available in my GitHub repository.
+
+### Creating a Fork or Copying
+
+To clone/fork/copy the repository you click on the fork tab which is situated next to unwatch tab in the top right corner of the page on github
+
+### Clone
+
+To create a clone you do the following;
+
+1. Go to the repository page on GitHub.
+2. Click the green code button.
+3. Copy the HTTPS link by clicking the clipboard icon.
+4. Open VS code and open a new terminal
+5. Type git clone (Then the repository url)
+6. Type cd (repository name) to open the cloned project
+
+### Repository deployment via Heroku
+
+- On the [Heroku Dashboard](https://dashboard.heroku.com) page, click New and then select Create New App from the drop-down menu.
+- When the next page loads insert the App name and Choose a region. Then click 'Create app'
+- In the settings tab click on Reveal Config Vars and add the following credentials. The credentials for this app are:
+
+1. DATABASE_URL
+2. SECRET_KEY
+3. DISABLE_COLLECTSTATIC
+
+### Deployment of the app
+
+- Go to the deploy tab and select github as the deployment method.
+- Connect your github account and search for your repository.
+- Select the repository that contains the project files and click connect.
+- Choose manual deployment to deploy when you want to.
+- Click deploy to start building the app
+- Once the deployment has finished click open app
+
+### Frameworks, programs and libraries used
+
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - A css framework
+
+* [Visual Studio Code](https://code.visualstudio.com/) - Used as the IDE.
+
+* [Github](https://github.com/) - I used Github to store all the data of my project after pushing it
+
+* [Heroku](https://www.heroku.com/) - is a cloud platform service  I used to deploy and host the project
+
+* [NeonDB](https://neon.tech/) Used to store PostgreSQL database.
+
+* [Font Awesome](https://fontawesome.com/) - Was used to add icons.
+
+* [Flake8 ](https://flake8.pycqa.org/) - I used it to validate python code
+
+* [figma](https://www.figma.com/) The wireframe mockups were created using 
+
+* [dbdiagram](https://dbdiagram.io/home) - was used to draw the database schema
+
+* [Stripe](https://stripe.com/en-ie) - was used for checkout functionality and facilitate online payments
+
+* [AWS](https://aws.amazon.com/s3/) - for  object storage through a web service interface.
+
+* [Unsplash](https://unsplash.com/) - images used for the project
+
+* [Pexels](https://www.pexels.com/) - images used for the project
+
+* [pixabay](https://pixabay.com/) - images used for the project
+
+## Credits
+
+* Images are from [pexels](https://www.pexels.com/) [pixabay](https://pixabay.com/) [unsplash](https://unsplash.com/)
+
+* Code Institute Botique Ado walkthrough
+
+* Code Institute Introduction to search engine optimization
+
+* Code Institute Web Marketing
+
+* create a 404 page [youtubevideo](https://www.youtube.com/watch?v=06Ae9FVnEOI)
+
+[StripeDocumentation](https://docs.stripe.com/)
+
+[python](https://docs.python.org/3.12/)
+
+
 
 ### Acknowledgement and support
 

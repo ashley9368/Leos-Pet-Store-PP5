@@ -89,4 +89,58 @@ Mobile
 
   ![](static/images/lighthouse-mobile.png)
  
+  </details>
+
+    <details>
+  <summary>Click here for Markup results</summary>
+
+   ![](static/images/w3-validator-html.png)
+
   </details> 
+
+  <details>
+  <summary>Click here for CSS results </summary>
+
+  ![](static/images/css-validator.png)
+
+  </details> 
+
+### Javascript validation
+I used JSlint to validate javascript in
+
+* checkout app/ stripe elements - double quote warnings/ picking up on comments
+
+### Python
+I validated my python code using Flake8 
+
+During the validation, I came across some issues, Like trailing whitespace, lines to long exceeding 79 characters, and unused imports. I have no fixed these errors to make sure the code follows PEP8 standards
+
+[Flake8](https://flake8.pycqa.org/en/latest/)
+
+## Bugs
+
+During this project i came across countless bugs during development, some were simple like not wiring up my urls correctly, and some were more in depth and were more complicated.
+
+### Bug 1
+Decimal - float type error.
+
+I got a type error because i mixed float and decimal numbers by mistake when working out the order total, i fixed it by making sure the delivery fee and total both use decimal.
+
+![TypeError screenshot](static/images/bug-float-decimal.png)
+
+### Bug 2
+
+I had an error on the product page because i had current_sorting inside the search block, to fix it i moved current_sorting outside the if statement.
+
+![](static/images/current_sorting-bug.png)
+ 
+### Bug 3
+
+![](static/images/bug4.jpg)
+
+### Bug 4
+
+Some of the products on my website had large white gaps under the images which made the layout look messy and uneven, i fixed it by, adding object-fit: cover; and setting the height and width in the template so they all display the same.
+
+![](static/images/white-space-bug-image.png)
+![](static/images/white-space-bug-fix.png)

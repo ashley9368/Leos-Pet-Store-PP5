@@ -3,9 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, ProductVote
+from .models import Product, ProductVote, Category, Review
 
-from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 from wishlist.models import WishlistItem
 
@@ -14,8 +13,13 @@ from wishlist.models import WishlistItem
 def all_products(request):
     """View to show all products, including sorting and search queries """
 
-    # Only show visible products to regular users, But show all the super users, regardless of listed or not
-    products = Product.objects.filter(is_visible=True) if not request.user.is_superuser else Product.objects.all()
+    # Only show visible products to regular users,
+    # But show all the super users, regardless of listed or not
+    products = (
+        Product.objects.filter(is_visible=True)
+        if not request.user.is_superuser
+        else Product.objects.all()
+    )
     query = None
     categories = None
     sort = None
@@ -36,22 +40,23 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-        
+
         # Handle category filtering
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-
         # Handle search queries
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -68,6 +73,7 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """View to show individual product details and handle reviews."""
     product = get_object_or_404(Product, pk=product_id)
@@ -77,7 +83,8 @@ def product_detail(request, product_id):
     # Check if the product is in the users wishlist
     is_in_wishlist = False
     if request.user.is_authenticated:
-        is_in_wishlist = WishlistItem.objects.filter(user=request.user, product=product).exists()
+        is_in_wishlist = WishlistItem.objects.filter(
+            user=request.user, product=product).exists()
 
     # If the form was submitted, process the review form
     if request.method == 'POST':
@@ -87,10 +94,13 @@ def product_detail(request, product_id):
             review.product = product
             review.user = request.user
             review.save()
-            messages.success(request, 'Your review was submitted successfully.')
+            messages.success(request,
+                             'Your review was submitted successfully.')
             return redirect('product_detail', product_id=product.id)
         else:
-            messages.error(request, 'There was an error with your review. Please check the form.')
+            messages.error(request,
+                           'There was an error with your review. '
+                           'Please check the form.')
     else:
         # If just viewing the page, show an empty form
         form = ReviewForm()
@@ -104,6 +114,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -114,16 +125,19 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add product. '
+                           'Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -140,7 +154,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update product. '
+                           'Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -152,6 +168,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
@@ -165,32 +182,36 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
+
 @login_required
 def toggle_visibility(request, pk):
     """Allow is_visible on a product and send you back where you came from"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry only store owners can do that.')
         return redirect('home')
-    
+
     product = get_object_or_404(Product, pk=pk)
     product.is_visible = not product.is_visible
     product.save()
     return redirect(request.META.get('HTTP_REFERER', '/'))
 
+
 @login_required
 def delete_review(request, review_id):
     """Delete a review if user is owner or superuser."""
     review = get_object_or_404(Review, pk=review_id)
-    
+
     # Check if user is the review creator or superuser, if yes, delete.
     if request.user == review.user or request.user.is_superuser:
         review.delete()
         messages.success(request, "Review deleted successfully.")
     # If not, then dont allow
     else:
-        messages.error(request, "You do not have permission to delete this review.")
-    
+        messages.error(
+            request, "You do not have permission to delete this review.")
+
     return redirect('product_detail', product_id=review.product.id)
+
 
 @login_required
 def vote_product(request, product_id, vote_type):
@@ -215,5 +236,5 @@ def vote_product(request, product_id, vote_type):
             else:
                 vote.vote_type = vote_type
                 vote.save()
-    #Take user back to where the user was, if it fails then go to products
+    # Take user back to where the user was, if it fails then go to products
     return redirect(request.META.get('HTTP_REFERER', 'products'))

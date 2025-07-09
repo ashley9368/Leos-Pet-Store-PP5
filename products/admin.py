@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, ProductVote, Review
 
+
 class ProductAdmin(admin.ModelAdmin):
     # Show these columns in the Products page
     list_display = (
@@ -13,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
         'is_visible',
     )
     readonly_fields = ('upvotes', 'downvotes', 'is_flagged')
+
 
 # Models for the admin
 admin.site.register(Product, ProductAdmin)

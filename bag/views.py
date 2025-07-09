@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from products.models import Product
 
+
 # Create your views here.
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -16,7 +17,8 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    # if the item is already in the bag, add the new amount to the existing amount
+    # if the item is already in the bag,
+    # add the new amount to the existing amount
     if item_id in bag:
         bag[item_id] += quantity
     else:
@@ -28,9 +30,10 @@ def add_to_bag(request, item_id):
 
     return redirect(redirect_url)
 
+
 def remove_from_bag(request, item_id):
     """Remove an item from the shopping bag"""
-    #get bag from session
+    # get bag from session
     bag = request.session.get('bag', {})
 
     # If the item exists in the bag, remove one or delete
