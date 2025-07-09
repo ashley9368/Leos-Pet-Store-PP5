@@ -1,59 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Newsletter Signup</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-</head>
+{% block extra_title %} Newsletter {% endblock %}
 
-<body class="bg-white">
-  <div class="container my-5 d-flex justify-content-center">
-    <div class="w-100" style="max-width: 400px;">
-      {% if messages %}
-      <div>
-        {% for message in messages %}
-        <div class="alert alert-dark text-center font-weight-bold" role="alert">
-          {{ message }}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
+{% block extra_css %}
+<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+{% endblock %}
 
-      <!-- Subscribe -->
-      <form action="{% url 'subscribe' %}" method="POST" class="p-4 border border-dark rounded">
-        {% csrf_token %}
-        <div class="form-group">
-          <label for="email" class="font-weight-bold d-block mb-2">
-            Subscribe to our newsletter!
-          </label>
-          <input type="email" id="email" name="email" class="form-control border-dark" placeholder="your email address "
-            required />
-        </div>
-        <button type="submit" class="btn btn-block mt-3" style="background-color: #000000; color: #ffffff;">
-          Subscribe
-        </button>
-      </form>
-
-      <!-- Unsubscribe -->
-      {% if subscriber %}
-      <form action="{% url 'unsubscribe' subscriber.unsubscribe_token %}" method="POST" class="text-center mt-3">
-        {% csrf_token %}
-        <button type="submit" class="btn mt-2" style="background-color: #000000; color: #ffffff;">I want to
-          unsubscribe</button>
-      </form>
-      {% endif %}
-
-      <div class="text-center mt-4">
-        <a href="{% url 'products' %}" class="btn mt-2" style="background-color: #000000; color: #ffffff;">Return To
-          Home</a>
-      </div>
-
+{% block page_header %}
+<div class="header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-  </div>
+</div>
+{% endblock %}
 
-</body>
+<!-- Mail Chimp code -->
+{% block content %}
+<div class="overlay"></div>
+<div id="mc_embed_signup">
+    <form action="https://herokuapp.us14.list-manage.com/subscribe/post?u=e5d603184e32099cbb5e01481&amp;id=008891aef5&amp;f_id=00944de5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_e5d603184e32099cbb5e01481_008891aef5" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+    </div>
+</form>
+</div>
+{% endblock %}
 
-</html>
+<!--  Mailchimp scripts-->
+{% block postloadjs %}
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+{% endblock %}
