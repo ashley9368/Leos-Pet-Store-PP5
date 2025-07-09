@@ -187,6 +187,9 @@ The facebook page for my project
 ![Facebook page](static/images/fb-page.png)
 ![Facebook page](static/images/fb-page-2.png)
 
+# Privacy Policy
+![Privacy Policy](static/images/privacy-policy.png)
+
 # Deployment
 ## Github Deployment
 
@@ -234,9 +237,22 @@ To create a clone you do the following;
 - Click deploy to start building the app
 - Once the deployment has finished click open app
 
+## Technologies
+### Languages
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+* [Javascript](https://www.javascript.com/)
+
+* [Python](https://www.python.org/)
+
+* [Django](https://www.djangoproject.com/)
+
 ### Frameworks, programs and libraries used
 
-* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+* [Django](https://www.djangoproject.com/) - Django is a high level Python web framework.
 
 * [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - A css framework
 
@@ -278,9 +294,11 @@ To create a clone you do the following;
 
 * create a 404 page [youtubevideo](https://www.youtube.com/watch?v=06Ae9FVnEOI)
 
-[StripeDocumentation](https://docs.stripe.com/)
+* [StripeDocumentation](https://docs.stripe.com/)
 
-[python](https://docs.python.org/3.12/)
+* [python](https://docs.python.org/3.12/)
+
+* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 
 
